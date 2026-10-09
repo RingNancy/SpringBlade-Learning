@@ -20,6 +20,10 @@
         </dependency>
         <dependency>
             <groupId>org.springblade</groupId>
+            <artifactId>blade-attendance-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springblade</groupId>
             <artifactId>blade-starter-swagger</artifactId>
         </dependency>
     </dependencies>
