@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hsxx.personnel.mapper.TbAtUserIdCardMapper">
+
+    <resultMap id="BaseResultMap" type="com.hsxx.personnel.pojo.entity.TbAtUserIdCard">
+            <id property="ID" column="ID" />
+            <result property="USER_ID" column="USER_ID" />
+            <result property="USER_NAME" column="USER_NAME" />
+            <result property="SEX_CODE" column="SEX_CODE" />
+            <result property="BIRTH_DATE" column="BIRTH_DATE" />
+            <result property="NATION_CODE" column="NATION_CODE" />
+            <result property="ID_CARD_NO" column="ID_CARD_NO" />
+            <result property="HOUSEHOLD" column="HOUSEHOLD" />
+            <result property="ISSUE_ORGAN" column="ISSUE_ORGAN" />
+            <result property="VALID_FROM" column="VALID_FROM" />
+            <result property="VALID_TO" column="VALID_TO" />
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        ID,USER_ID,USER_NAME,SEX_CODE,BIRTH_DATE,NATION_CODE,
+        ID_CARD_NO,HOUSEHOLD,ISSUE_ORGAN,VALID_FROM,VALID_TO
+    </sql>
+</mapper>

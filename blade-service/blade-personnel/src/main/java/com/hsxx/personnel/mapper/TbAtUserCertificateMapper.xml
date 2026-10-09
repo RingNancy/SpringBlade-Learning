@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hsxx.personnel.mapper.TbAtUserCertificateMapper">
+
+    <resultMap id="BaseResultMap" type="com.hsxx.personnel.pojo.entity.TbAtUserCertificate">
+            <id property="ID" column="ID" />
+            <result property="USER_ID" column="USER_ID" />
+            <result property="CERT_NAME" column="CERT_NAME" />
+            <result property="GET_DATE" column="GET_DATE" />
+            <result property="EXPIRE_DATE" column="EXPIRE_DATE" />
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        ID,USER_ID,CERT_NAME,GET_DATE,EXPIRE_DATE
+    </sql>
+</mapper>

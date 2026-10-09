@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hsxx.personnel.mapper.TbAtUserContactMapper">
+
+    <resultMap id="BaseResultMap" type="com.hsxx.personnel.pojo.entity.TbAtUserContact">
+            <id property="ID" column="ID" />
+            <result property="USER_ID" column="USER_ID" />
+            <result property="MEMBER_NAME" column="MEMBER_NAME" />
+            <result property="RELATION" column="RELATION" />
+            <result property="MOBILE" column="MOBILE" />
+            <result property="ADDRESS" column="ADDRESS" />
+            <result property="IS_OUT_PROVINCE" column="IS_OUT_PROVINCE" />
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        ID,USER_ID,MEMBER_NAME,RELATION,MOBILE,ADDRESS,
+        IS_OUT_PROVINCE
+    </sql>
+</mapper>

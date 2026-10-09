@@ -81,7 +81,7 @@
             </dependency>
             <dependency>
                 <groupId>org.springblade</groupId>
-                <artifactId>blade-attendance-api</artifactId>
+                <artifactId>blade-personnel-api</artifactId>
                 <version>${revision}</version>
             </dependency>
             <!-- dynamic-datasource -->

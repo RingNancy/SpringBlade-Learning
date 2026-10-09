@@ -20,7 +20,7 @@
         <module>blade-log</module>
         <module>blade-system</module>
         <module>blade-demo</module>
-        <module>blade-attendance</module>
+        <module>blade-personnel</module>
     </modules>
 
     <dependencies>

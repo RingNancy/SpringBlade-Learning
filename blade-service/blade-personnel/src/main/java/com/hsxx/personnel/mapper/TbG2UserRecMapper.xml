@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hsxx.personnel.mapper.TbG2UserRecMapper">
+
+    <resultMap id="BaseResultMap" type="com.hsxx.personnel.pojo.entity.TbG2UserRec">
+            <id property="REC_ID" column="REC_ID" />
+            <result property="USER_ID" column="USER_ID" />
+            <result property="SNAP_JSON" column="SNAP_JSON" />
+            <result property="MODIFY_TIME" column="MODIFY_TIME" />
+            <result property="MODIFY_USER" column="MODIFY_USER" />
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        REC_ID,USER_ID,SNAP_JSON,MODIFY_TIME,MODIFY_USER
+    </sql>
+</mapper>
