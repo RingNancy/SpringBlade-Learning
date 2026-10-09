@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hsxx.attendance.mapper.TbG2UserMapper">
+
+    <resultMap id="BaseResultMap" type="com.hsxx.attendance.pojo.entity.TbG2User">
+            <id property="userId" column="USER_ID" />
+            <result property="userCode" column="USER_CODE" />
+            <result property="userName" column="USER_NAME" />
+            <result property="sexCode" column="SEX_CODE" />
+            <result property="birthDate" column="BIRTH_DATE" />
+            <result property="nationCode" column="NATION_CODE" />
+            <result property="marriageStatus" column="MARRIAGE_STATUS" />
+            <result property="marriageDate" column="MARRIAGE_DATE" />
+            <result property="mobileSync" column="MOBILE_SYNC" />
+            <result property="mobileSelf" column="MOBILE_SELF" />
+            <result property="employeeType" column="EMPLOYEE_TYPE" />
+            <result property="userAttr" column="USER_ATTR" />
+            <result property="enterGroupDate" column="ENTER_GROUP_DATE" />
+            <result property="enterCompanyDate" column="ENTER_COMPANY_DATE" />
+            <result property="workStartDate" column="WORK_START_DATE" />
+            <result property="groupSeniority" column="GROUP_SENIORITY" />
+            <result property="companySeniority" column="COMPANY_SENIORITY" />
+            <result property="workSeniority" column="WORK_SENIORITY" />
+            <result property="residenceType" column="RESIDENCE_TYPE" />
+            <result property="parentsHomePlace" column="PARENTS_HOME_PLACE" />
+            <result property="spouseHomePlace" column="SPOUSE_HOME_PLACE" />
+            <result property="organId" column="ORGAN_ID" />
+            <result property="jobId" column="JOB_ID" />
+            <result property="teamId" column="TEAM_ID" />
+            <result property="onJobStatus" column="ON_JOB_STATUS" />
+            <result property="syncTime" column="SYNC_TIME" />
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        USER_ID,USER_CODE,USER_NAME,SEX_CODE,BIRTH_DATE,NATION_CODE,
+        MARRIAGE_STATUS,MARRIAGE_DATE,MOBILE_SYNC,MOBILE_SELF,EMPLOYEE_TYPE,
+        USER_ATTR,ENTER_GROUP_DATE,ENTER_COMPANY_DATE,WORK_START_DATE,GROUP_SENIORITY,
+        COMPANY_SENIORITY,WORK_SENIORITY,RESIDENCE_TYPE,PARENTS_HOME_PLACE,SPOUSE_HOME_PLACE,
+        ORGAN_ID,JOB_ID,TEAM_ID,ON_JOB_STATUS,SYNC_TIME
+    </sql>
+</mapper>
