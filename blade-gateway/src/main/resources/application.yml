@@ -1,0 +1,18 @@
+# 接口文档聚合:各微服务经网关同源路由 /{serviceId}/v3/api-docs 暴露,由网关 Swagger-UI 下拉聚合
+springdoc:
+  api-docs:
+    # 必须保持开启,关闭会连锁禁用聚合所依赖的 SwaggerUiConfigProperties
+    enabled: true
+  swagger-ui:
+    # 去掉默认的 petstore 示例下拉项
+    disable-swagger-default-url: true
+blade:
+  swagger:
+    discovery:
+      # 聚合下拉项刷新间隔(毫秒)
+      refresh-interval: 30000
+      # 无业务文档、不纳入聚合的服务
+      excluded-services:
+        - blade-gateway
+        - blade-admin
+        - blade-log

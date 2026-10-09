@@ -1,0 +1,23 @@
+server:
+  port: 7002
+  tomcat:
+    # 线程配置
+    threads:
+      # 最大工作线程数(可同时处理请求的线程上限)
+      max: 400
+      # 最小空闲工作线程数(保持存活的常驻线程数)
+      min-spare: 16
+
+spring:
+  boot:
+    admin:
+      discovery:
+        ignored-services:
+          - consul
+          - serverAddr
+
+management:
+  endpoints:
+    web:
+      discovery:
+        enabled: false
