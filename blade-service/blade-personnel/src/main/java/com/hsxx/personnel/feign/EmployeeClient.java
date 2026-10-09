@@ -25,6 +25,9 @@ import org.springblade.core.tool.api.R;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.List;
+import java.util.stream.Collectors;
+
 /**
  * 员工信息 Feign实现类
  *
@@ -38,6 +41,13 @@ import org.springframework.web.bind.annotation.RestController;
 public class EmployeeClient implements IEmployeeClient {
 
 	private TbG2UserService tbG2UserService;
+
+	@Override
+	@GetMapping(LIST)
+	public R<List<EmployeeBasicInfoVO>> list() {
+		List<TbG2User> users = tbG2UserService.list();
+		return R.data(users.stream().map(TbUserWrapper.build()::entityVO).collect(Collectors.toList()));
+	}
 
 	@Override
 	@GetMapping(DETAIL)

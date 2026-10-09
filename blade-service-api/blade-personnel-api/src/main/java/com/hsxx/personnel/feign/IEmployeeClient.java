@@ -21,6 +21,8 @@ import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import java.util.List;
+
 /**
  * 员工信息 Feign接口类
  *
@@ -34,7 +36,16 @@ import org.springframework.web.bind.annotation.RequestParam;
 public interface IEmployeeClient {
 
 	String API_PREFIX = "/feign/client/employee";
+	String LIST = API_PREFIX + "/list";
 	String DETAIL = API_PREFIX + "/detail";
+
+	/**
+	 * 获取员工列表
+	 *
+	 * @return 员工基本信息列表
+	 */
+	@GetMapping(LIST)
+	R<List<EmployeeBasicInfoVO>> list();
 
 	/**
 	 * 获取员工基本信息
