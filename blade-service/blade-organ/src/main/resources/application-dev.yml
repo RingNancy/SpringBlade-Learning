@@ -1,0 +1,15 @@
+#mybatis-plus配置
+mybatis-plus:
+  mapper-locations: classpath:com/hsxx/**/mapper/*Mapper.xml
+  #实体扫描，多个package用逗号或者分号分隔
+  typeAliasesPackage: com.hsxx.**.entity
+#服务器端口
+server:
+  port: 8113
+
+#数据源配置
+spring:
+  datasource:
+    url: ${blade.datasource.dev.url}
+    username: ${blade.datasource.dev.username}
+    password: ${blade.datasource.dev.password}

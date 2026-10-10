@@ -21,6 +21,8 @@
         <module>blade-system</module>
         <module>blade-demo</module>
         <module>blade-personnel</module>
+        <module>blade-attendance</module>
+        <module>blade-organ</module>
     </modules>
 
     <dependencies>

@@ -31,7 +31,6 @@
         <module>blade-service</module>
         <module>blade-service-api</module>
         <module>blade-common</module>
-        <module>blade-service/blade-organ</module>
     </modules>
 
     <dependencyManagement>
